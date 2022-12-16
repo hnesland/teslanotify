@@ -32,6 +32,13 @@ services:
 
 Or you can run the binary anywhere you like, it reads configuration from the environment variables like above.
 
+Build the binary with `go build -o teslanotify ./cmd/teslanotify` and run it like:
+
 ```bash
-NTFY_TOPIC=secret_tesla_topic MQTT_HOST=127.0.0.1 MQTT_PORT=1883 TESLA_STATES=charging DEBUG=1 ./teslanotify
+export NTFY_TOPIC=secret_tesla_topic
+export MQTT_HOST=127.0.0.1
+export MQTT_PORT=1883
+export TESLA_STATES=charging
+export DEBUG=1
+./teslanotify
 ```
