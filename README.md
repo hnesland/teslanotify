@@ -6,9 +6,9 @@ Simple addon to [TeslaMate](https://github.com/adriankumpf/teslamate) that uses 
 ### Environment Variables
 | Variable     | Description | Default |
 | ------------ | ----------- | -------- |
-| DEBUG        | Outputs more verbose logging if set to `1`. | `0` |
+| DEBUG        | Outputs more verbose logging if set to `1`. | `0` |
 | NTFY_URL     | ntfy instance. | `https://ntfy.sh/` |
-| NTFY_TOPIC   | ntfy topic. You want to change this. | `teslas` |
+| NTFY_TOPIC   | ntfy topic. You want to change this. | `teslas` |
 | NTFY_MSG     | Notification message template. This is the message your notification device receives. | `Car is {{.State}}` |
 | MQTT_HOST    | The host of the TeslaMate MQTT server. | `moquitto` |
 | MQTT_PORT    | The port of the TeslaMate MQTT server. | `1883` |
